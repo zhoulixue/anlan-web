@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="rootApp">
+<head>
+	<title>武汉安蓝科技有限公司</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+	<script type="text/javascript" src=js/angular-sanitize.js></script>
+
+	<script type="text/javascript" src="script/controller/mainController.js"></script>
+	<script type="text/javascript" src="script/controller/newsTradeController.js"></script>
+	<script type="text/javascript" src="script/controller/newsTradeContentController.js"></script>
+	<script type="text/javascript" src="script/controller/newsMarketController.js"></script>
+	<script type="text/javascript" src="script/controller/newsMarketContentController.js"></script>
+	<script type="text/javascript" src="script/controller/newsHolidayController.js"></script>
+	<script type="text/javascript" src="script/controller/
+	newsHolidayContentController.js"></script>
+	<script type="text/javascript" src="script/controller/project.js"></script>
+	<script type="text/javascript" src="script/controller/projectContentController.js"></script>
+	<script type="text/javascript" src="script/controller/recruit.js"></script>
+	<script type="text/javascript" src="script/controller/
+	recruitContent.js"></script>
+	<script type="text/javascript" src="script/
+	controller/certificate.js"></script>
+	<script type="text/javascript" src="script/
+	controller/activity.js"></script>
+	<script type="text/javascript" src="script/
+	controller/about.js"></script>
+	<script type="text/javascript" src="script/
+	controller/map.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+	<script type="text/javascript" src="script/app.js"></script>
+</head>
+<body ng-controller="rootController">
+<ng-include src="'views/header.html'"></ng-include>
+<div ng-view></div>
+<ng-include src="'views/footer.html'"></ng-include>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<div class="wapper">
+	<!-- 图片 -->
+<div id="imageStatic">
+	<img src="images/project.jpg">
+</div>
+<!-- 图片 end -->
+<!-- main -->
+<div class="news-main">
+	<div class="newsNav">
+	<ul class="newsNav-parent">
+		<li><a href="#project">工程案例</a></li>
+	</ul>
+	<ng-include src="'views/newsNav-conact.html'"></ng-include>
+	</div>
+	<div class="news-content">
+		<div class="news-content-nav">
+			<div class="project-nav-left">
+				<span>当前位置：</span>
+				<a href="#">首页</a>
+				<span>&gt;</span>
+				<strong>工程案例</strong>
+			</div>
+		</div>
+		<div class="project-content-top">
+			<h3><strong>案例展示</strong></h3>
+		</div>
+		<div class="project-content-main">
+			<div class="project-show" ng-repeat="item in showList track by $index" ng-model="item"> 
+			<div class="project-show-img">
+				<a href="javascript:void(0)" ng-click="jumpContent(item)"><img src="{{item.imgsrc}}"></a>
+			</div>
+			<div class="project-show-title">
+				<span title="{{item.title}}">{{item.title}}</span>
+			</div>						
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="news-content-foot">
+			<span>共{{totalList.length}}条记录&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span>页次：{{currentPage}}/{{totalPage}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<span>&lt;&nbsp;<a href="javascript:void(0);" ng-click="changePageUp()">上一页</a>
+			<a href="javascript:void(0)" ng-repeat="item in pageTh" ng-click="changePage(item)" ng-model="item">&nbsp;{{item}}&nbsp;</a>
+			&nbsp;<a href="javascript:void(0)" ng-click="changePageDown()">下一页</a>&nbsp;&gt;</span>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<!-- main end -->
+</div>

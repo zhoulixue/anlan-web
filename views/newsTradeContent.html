@@ -1,0 +1,59 @@
+<div class="wapper">
+	<!-- 图片 -->
+<div id="imageStatic">
+	<img src="images/newsTrade.png">
+</div>
+<!-- 图片 end -->
+<!-- main -->
+<div class="news-main">
+	<div class="newsNav">
+	<ul class="newsNav-parent">
+		<li><a href="#newsTrade">新闻资讯</a></li>
+	</ul>
+	<ul class="newsNav-child">
+		<li style="background-color:#00b3e1;"><a href="#newsTrade">行业新闻</a></li>
+		<li><a href="#newsMarket">市场现状</a></li>
+		<li><a href="#newsHoliday">放假通知</a></li>
+	</ul>
+	<ng-include src="'views/newsNav-conact.html'"></ng-include>
+	</div>
+	<div class="news-content">
+		<div class="news-content-nav">
+			<div class="news-content-nav-left">
+				<strong>行业新闻</strong>		
+			</div>
+			<div class="news-content-nav-right">
+				<span>当前位置：</span>
+				<a href="#">首页</a>
+				<span>&gt;</span>
+				<a href="#newsTrade">新闻资讯</a>
+				<span>&gt;</span>
+				<span>行业新闻</span>
+			</div>
+		</div>
+		<div class="newsContentTop">
+		<h4><strong>{{currentNews.title}}</strong></h4>
+		<span>作者：{{currentNews.author}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>来源：{{currentNews.source}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>时间：{{currentNews.time}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>关键字：{{currentNews.keyWord}}</span>
+		</div>
+		<div class="news-content-main">
+		<p ng-repeat="item in currentNews.content track by $index" ng-show="currentNews">{{item}}</p>
+		<div class="news-content-none" ng-show="!currentNews">
+			这条数据不存在
+		</div>
+		</div>
+		<div class="newsContentFoot">
+			<div class="preNews">
+				<span>上一篇：<a href="javascript:void(0)" ng-model="preNews" ng-click="toPreNews(preNews)">{{preNewsMsg}}</a></span>
+			</div>
+			<div class="nextNews">
+				<span>下一篇：<a href="javascript:void(0)" ng-model="nextNews" ng-click="toNextNews(nextNews)">{{nextNewsMsg}}</a></span>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<!-- main end -->
+</div>

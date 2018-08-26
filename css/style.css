@@ -1,0 +1,404 @@
+/*头部区域*/
+.header{
+	position: relative;
+	z-index: 1000;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hd_logo{
+	position:absolute;
+}
+.hd_logo img{
+	height: 100px;
+}
+.hd_nav{
+	position: absolute;
+    left: 220px;
+    top: 30px;
+}
+.hd_nav ul{
+	list-style: none;
+}
+.nav-parent li{
+	float:left; 
+	position: relative;
+}
+.nav-parent li a{
+	text-decoration: none;
+	display:block; 
+	line-height:50px; 
+	color:#333;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	padding: 0px 20px;
+}
+.nav-parent li i{
+	display:block; 
+	width:0%; 
+	height:3px; 
+	background:#00b3e1; 
+	position:relative; 
+	bottom:3px; 
+	left:50%; 
+	transition: 0.3s;
+}
+.nav-parent > li:hover > a{
+	color:#00b3e1;
+}
+.nav-parent > li:hover .nav-child{
+	display: block;	
+}
+.nav-parent li:hover i{
+	left:0; 
+	width:100%;
+}
+.nav-child{
+	position: absolute;
+	display: none;
+	width: 100px;
+}
+.nav-child li{
+	width: 100px;
+}
+.nav-child ul li{
+	background-color: #ddd;
+    right: 40px;
+    bottom: 3px;
+}
+.nav-child ul li:hover{
+	background-color: #00b3e1;
+}
+.hd_tel{
+	position: relative;
+	color:#888;
+	left: 960px;
+    top: 20px;
+    width: 200px;
+}
+.hd_tel img{
+	width: 40px;
+}
+.hd_tel p{
+	font-size:20px; 
+	color:#00b3e1; 
+	font-weight:900; 
+	line-height:1em;
+}
+/*头部区域 end*/
+
+.wapper{
+	margin-bottom: 140px;
+}
+
+/*轮播区域*/
+.flexslider{
+	position: relative;
+	top: 30px;
+	height:300px;
+}
+.flexslider img{
+	width:100%;
+	height:300px;
+}
+/*轮播区域 end*/
+/*静态图片*/
+#imageStatic img{
+	position: relative;
+    top: 30px;
+	width:100%;
+	height:300px;
+}
+/*静态图片 end*/
+/*main*/
+.index-nav{
+	position: relative;
+    width: 1200px;
+    top: 30px;
+    border-top: solid 2px grey;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.index-nav-content  img{
+	width: 320px;
+    height: 140px;
+}
+.index-nav-content{
+	height: 300px;
+	width: 30%;
+	float:left;
+    margin-right:35px;
+    margin-bottom: 40px; 
+    margin-bottom: 20px;
+}
+.imageIndex{
+	position: relative;
+	width: 320px;
+    height: 140px;
+}
+.index-bg{
+	position: absolute;
+    background-color: black;
+    text-align: right;
+    top: 108px;
+    font-size: 20px;
+    color: white;
+    opacity: 0.6;
+	width: 320px;
+    height: 31px;
+}
+.index-nav-content-list{
+	width: 325px;
+	margin-top: 20px;
+}
+.index-nav-content-list li{
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.index-nav-content-list a{
+	text-decoration: none;
+	color: black;
+}
+.index-nav-content-list a:hover{
+	color: blue;
+}
+.news-main{
+	position: relative;
+    top: 80px;
+    width: 1200px;
+    border-top: solid #164c96;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.newsNav{
+	float: left;
+	width: 270px;
+    text-align: center;
+}
+.newsNav ul{
+	width: 180px;
+	list-style: none;
+	padding: 0px;
+    margin: 20px 0px;
+}
+.newsNav li{
+	text-align: left;
+}
+.newsNav li a{
+	font-family: "宋体";
+	color: black;
+	text-decoration: none;
+}
+.newsNav-child li:hover{
+	background-color: #00b3e1;
+}
+.newsNav-parent{
+	font-size: 30px;
+}
+.newsNav-parent li{
+	border-bottom: solid 1px grey;
+}
+.newsNav-child a{
+	font-size: 20px;
+}
+.newsNav-child li{
+	margin-bottom: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.newsNav-child li{
+	border-bottom: dashed 1px grey;
+}
+.newsNav-conact img{
+	width: 40px;
+}
+.newsNav-conact li a{
+	color: blue;
+}
+.newsNav-conact li{
+	color: blue;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	border-bottom: dashed 1px grey;
+}
+.weixin{
+	position: relative;
+}
+.weixin:hover{
+	cursor: pointer;
+}
+.weixinPicture{
+	display: none;
+	position: absolute;
+	width: 200px;
+	left: 180px;
+	top: -70px;
+}
+.weixin:hover .weixinPicture{
+	display: block;
+}
+.news-content{
+	width: 900px;
+	float: right;
+}
+.news-content-nav{
+    width: 900px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px grey;
+}
+.news-content-nav-left{
+	float: left;
+	font-family: "宋体";
+	font-size: 20px;
+}
+.news-content-nav-right{
+	float: right;
+}
+.news-content-nav-right a{
+	text-decoration: none;
+	color: red;
+}
+.news-content-nav-right a:hover{
+	color: blue;
+}
+.news-content-none{
+	text-align: center;
+	color: red;
+	padding: 20px;
+    border-bottom: solid 1px grey;
+}
+.tail{
+	width: 900px;
+	text-align: right;
+}
+.news-content-main p{
+	margin-top: 30px;
+	text-indent: 2em;
+}
+.newsContentTop{
+	padding: 16px;
+    border-bottom: dashed 1px grey;
+	text-align: center;
+}
+.newsContentTop h4{
+	color: #164c96;
+}
+.news-content-main{
+	padding-bottom: 20px;
+}
+.news-content-main a{
+	text-decoration: none;
+	color: black;
+}
+.news-content-main a:hover{
+	color: blue;
+}
+.news-content-main span{
+	float: right;
+}
+.news-content-main li{
+	border-bottom: dashed 1px grey;
+    margin: 20px 0px;
+}
+.newsContentFoot{
+	float: left;
+}
+.newsContentFoot a{
+	text-decoration: none;
+}
+.preNews{
+	width: 800px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px grey;
+}
+.nextNews{
+	padding-top: 10px;
+}
+.news-content-foot{
+	float: right;
+}
+.news-content-foot a{
+	color: black;
+}
+.news-content-foot a:hover{
+	color: red;
+}
+.footer{
+	position: relative;
+	font-size: 15px;
+	text-align: center;
+	border-top: solid 4px #164c96;
+    padding-top: 20px;
+}
+.foot-top{
+	position: relative;
+	padding-bottom: 50px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.other-link{
+	float: left;
+	position: absolute;
+}
+
+.foot-top-nav{
+	float: right;
+	position: absolute;
+    left: 900px;
+}
+.copyright{
+	position: absolute;
+    left: 330px;
+}
+.project-nav-left{
+	float: left;
+}
+.project-nav-left a{
+	text-decoration: none;
+	color: red;
+}
+.project-nav-left a:hover{
+	color: blue;
+}
+.project-content-main{
+	padding-bottom: 20px;
+	text-align: center;
+}
+.project-content-main a{
+	text-decoration: none;
+	color: black;
+}
+.project-content-main a:hover{
+	color: blue;
+}
+.project-content-top > h3{
+	padding: 52px;
+    border-bottom: dashed 1px grey;
+    text-align: center;
+}
+.project-show{
+	width: 280px;
+    margin-top: 20px;
+	float: left;
+	margin-right: 20px;
+}
+.project-show-img{
+	box-shadow: -3px 0 3px grey,3px 0 3px grey,0 3px 3px grey,0 -3px 3px grey;
+}
+.project-show-img img{
+	width: 260px;
+	height: 200px;
+}
+.project-show-title{
+	font-size:15px;
+	margin-top: 20px; 
+	height: 40px;
+}
+.certificateImg img{
+	width: 900px;
+    margin-top: 20px;
+}

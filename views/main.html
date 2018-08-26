@@ -1,0 +1,52 @@
+<div class="wapper">
+	<!-- 轮播区域 -->
+<div class="flexslider"> 
+<ul class="slides"> 
+    <li><a href="#newsTrade"><img src="images/newsTrade.png" /></a></li> 
+    <li><a href="#project"><img src="images/project.jpg" /></a></li> 
+    <li><a href="#recruit"><img src="images/recruit.jpg" /></a></li> 
+    <li><a href="#certificate"><img src="images/culture.png" /></a></li> 
+	</ul> 
+</div>
+<!-- 轮播区域 end -->
+<!-- main -->
+<div class="index-nav">
+<div class="index-nav-content">
+	<div class="imageIndex"><a href="#newsTrade"><img src="./images/newsTrade.png"><div class="index-bg"><span>关注公司动态</span></div></a></div>
+	<ul class="index-nav-content-list" >
+		<li ng-repeat="item in newsList track by $index" ng-model="item"><a href="javascript:void(0)" ng-click="jumpNewsContent(item)" title="{{item.title}}">{{item.title}}</a></li>
+	</ul>
+</div>
+<div class="index-nav-content">
+	<div class="imageIndex"><a href="#project"><img src="./images/mainProject.jpg"><div class="index-bg"><span>施工项目</span></div></a></div>
+	<ul class="index-nav-content-list" >
+		<li ng-repeat="item in projectList track by $index" ng-model="item"><a href="javascript:void(0)" ng-click="jumpProjectContent(item)" title="{{item.title}}">{{item.title}}</a></li>
+	</ul>
+</div>
+<div class="index-nav-content">
+	<div class="imageIndex"><a href="#about"><img src="./images/about.jpg"><div class="index-bg"><span>了解安蓝</span></div></a></div>
+	<div class="index-nav-content-list">
+		<p>武汉安蓝智能科技有限公司是一家致力于计算机软硬件研发、销售，计算机网络集成，消防工程、通信工程、安防工程、道路信号工程、建筑智能化工程、LED照明工程承接、设计、施工、维修，安防系统、雷电防护系统、LED显示屏系统设计、施工、维修，计算机综合布线，计算机软硬件、安防产品、办公耗材批发及零售的民营科技公司。</p>
+	</div>
+</div>
+<div class="index-nav-content">
+	<div class="imageIndex"><a href="#activity"><img src="./images/culture.png"><div class="index-bg"><span>公司活动</span></div></a></div>
+	<div class="index-nav-content-list">
+		<p>“诚信、敬业、求实、创新”的经营理念，“以人为本，科学经营”的管理理念，“用户至上、信誉第一”的优质服务</p>
+	</div>
+</div>
+<div class="index-nav-content">
+	<div class="imageIndex"><a href="#recruit"><img src="./images/recruit.jpg"><div class="index-bg"><span>招贤纳士</span></div></a></div>
+	<ul class="index-nav-content-list" >
+		<li ng-repeat="item in recruitList track by $index" ng-model="item"><a href="javascript:void(0)" ng-click="jumpRecruitContent(item)" title="{{item.title}}">{{item.title}}</a></li>
+	</ul>
+</div>
+<div style="clear:both;"></div>
+</div>
+<!-- main end -->
+</div>
+<script type="text/javascript">
+	$(function() { 
+    	$(".flexslider").flexslider(); 
+	});  
+</script>

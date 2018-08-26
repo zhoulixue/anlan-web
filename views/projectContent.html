@@ -1,0 +1,51 @@
+<div class="wapper">
+	<!-- 图片 -->
+<div id="imageStatic">
+	<img src="images/project.jpg">
+</div>
+<!-- 图片 end -->
+<!-- main -->
+<div class="news-main">
+	<div class="newsNav">
+	<ul class="newsNav-parent">
+		<li><a href="#project">工程案例</a></li>
+	</ul>
+	<ng-include src="'views/newsNav-conact.html'"></ng-include>
+	</div>
+	<div class="news-content">
+		<div class="news-content-nav">
+			<div class="project-nav-left">
+				<span>当前位置：</span>
+				<a href="#">首页</a>
+				<span>&gt;</span>
+				<a href="#project">工程案例</a>
+				<span>&gt;</span>
+				<strong>{{currentNews.title}}</strong>
+			</div>
+		</div>
+		<div class="newsContentTop">
+		<h4><strong>{{currentNews.title}}</strong></h4>
+		<span>发布时间：{{currentNews.time}}</span>
+		</div>
+		<div class="news-content-main">
+		<div class="newsContentMain">
+		<img src="{{currentNews.imgsrc}}" style="width:900px;margin-top:20px;">
+		<p ng-repeat="item in currentNews.content track by $index">{{item}}</p>
+		</div>
+		<div class="news-content-none" ng-show="!currentNews">
+			这条数据不存在
+		</div>
+		</div>
+		<div class="newsContentFoot">
+			<div class="preNews">
+				<span>上一篇：<a href="javascript:void(0)" ng-model="preNews" ng-click="toPreNews(preNews)">{{preNewsMsg}}</a></span>
+			</div>
+			<div class="nextNews">
+				<span>下一篇：<a href="javascript:void(0)" ng-model="nextNews" ng-click="toNextNews(nextNews)">{{nextNewsMsg}}</a></span>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<!-- main end -->
+</div>

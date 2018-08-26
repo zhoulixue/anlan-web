@@ -1,0 +1,83 @@
+<div class="wapper">
+	<!-- 图片 -->
+<div id="imageStatic">
+	<img src="images/about.jpg">
+</div>
+<!-- 图片 end -->
+<!-- main -->
+<div class="map-main">
+<div class="map-main-content">
+	<div class="map-main-top">
+		<a href="#newsTrade"> 新闻资讯</a>
+	</div>
+	<div class="map-main-foot">
+		<a href="#newsTrade">行业新闻 </a>
+		<a href="#newsMarket">市场现状 </a>
+		<a href="#newsHoliday">放假通知 </a>
+	</div>
+</div>
+<div class="map-main-content">
+	<div class="map-main-top">
+		<a href="#project"> 工程案例</a>
+	</div>
+	<div class="map-main-foot">
+	<a href="javascript:void(0);" ng-model="item" ng-click="projectContent(item)" ng-repeat="item in projectList track by $index">{{item.title}}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
+</div>
+<div class="map-main-content">
+	<div class="map-main-top">
+		<a href="#recruit"> 招贤纳士</a>
+	</div>
+	<div class="map-main-foot">
+	<a href="javascript:void(0);" ng-model="item" ng-click="recruitContent(item)" ng-repeat="item in recruitList track by $index">{{item.title}}&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
+</div>
+<div class="map-main-content">
+	<div class="map-main-top">
+		<a href="#certificate"> 企业文化</a>
+	</div>
+	<div class="map-main-foot">
+		<a href="#certificate">资质证明 </a>
+		<a href="#recruitCulture">人才招聘 </a>
+		<a href="#news">新闻中心 </a>
+		<a href="#activity">组织活动 </a>
+	</div>
+</div>
+<div class="map-main-content">
+	<div class="map-main-top">
+		<a href="#about"> 关于我们</a>
+	</div>
+	<div class="map-main-foot">
+		<a href="#about">公司简介 </a>
+		<a href="#law">法律声明 </a>
+		<a href="#conact">联系我们 </a>
+	</div>
+</div>
+</div>
+<!-- main end -->
+</div>
+<style type="text/css">
+	.map-main{
+		position: relative;
+    	width: 1200px;
+    	left: 170px;
+    	top: 60px;
+    	font-size: 20px;
+	}
+	.map-main-content{
+    	border: solid 1px;
+		margin-bottom: 10px;
+	}
+	.map-main-top{
+		background-color: #ddd;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 10px;
+    	border-bottom: solid 1px;
+	}
+	.map-main-foot{
+		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 10px;
+	}
+</style>
